@@ -298,7 +298,9 @@ function resetGame() {
 }
 
 function onResize() {
-    cars.style.marginLeft = street.offsetLeft + 'px';
+    if (cars && street) {
+        cars.style.marginLeft = street.offsetLeft + 'px';
+    }
 }
 
 (function() {
